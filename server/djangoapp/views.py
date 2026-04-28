@@ -70,3 +70,21 @@ def get_dealer_reviews(request, dealer_id):
     # محاكاة للتقييمات
     reviews = [{"id": 1, "name": "John Doe", "review": "Great service!", "sentiment": "positive"}]
     return JsonResponse(reviews, safe=False)
+def analyze_review_sentiments(text):
+    # محاكاة لعملية تحليل المشاعر (Sentiment Analysis)
+    # في المشروع الحقيقي يتم استدعاء Microservice خارجي
+    positive_words = ['good', 'great', 'fantastic', 'excellent', 'amazing']
+    negative_words = ['bad', 'poor', 'terrible', 'horrible', 'expensive']
+    
+    sentiment = "neutral"
+    if any(word in text.lower() for word in positive_words):
+        sentiment = "positive"
+    elif any(word in text.lower() for word in negative_words):
+        sentiment = "negative"
+    
+    return sentiment
+
+def get_sentiment(request, review_text):
+    # Endpoint لاستدعاء التحليل (للمهمة 16)
+    sentiment = analyze_review_sentiments(review_text)
+    return JsonResponse({"sentiment": sentiment})
