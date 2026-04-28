@@ -1,5 +1,0 @@
-curl -X POST http://localhost:8000/djangoapp/login \
-     -d "username=shaleekhalil&password=shalee123" \
-     -H "Content-Type: application/x-www-form-urlencoded"
-
-{"username": "shaleekhalil", "status": "Authenticated"}

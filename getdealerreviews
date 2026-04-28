@@ -1,7 +1,0 @@
-# Command:
-curl -X GET http://localhost:8000/djangoapp/reviews/dealer/1
-
-# Output:
-[
-  {"id": 101, "name": "John Doe", "dealership": 1, "review": "Great service and friendly staff!", "purchase": true, "purchase_date": "2023-10-01", "car_make": "Toyota", "car_model": "Camry", "car_year": 2022, "sentiment": "positive"}
-]

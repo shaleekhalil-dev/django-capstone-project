@@ -1,5 +1,0 @@
-# Command:
-curl -X GET http://localhost:8000/djangoapp/logout
-
-# Output:
-{"username": "shaleekhalil", "status": "Successfully logged out"}

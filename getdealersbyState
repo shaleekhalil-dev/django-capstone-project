@@ -1,7 +1,0 @@
-# Command:
-curl -X GET http://localhost:8000/djangoapp/get_dealers/Kansas
-
-# Output:
-[
-  {"id": 3, "city": "Wichita", "address": "789 Airway Ln", "zip": "67201", "state": "Kansas", "short_name": "Kansas Motors", "full_name": "Kansas Motors Dealership"}
-]
