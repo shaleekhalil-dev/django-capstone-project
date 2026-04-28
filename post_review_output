@@ -1,0 +1,14 @@
+# Command to post a review
+curl -X POST http://localhost:8000/djangoapp/add_review -d '{
+    "dealership": 1,
+    "name": "Shalee Khalil",
+    "purchase": true,
+    "review": "Excellent dealership, very professional!",
+    "purchase_date": "2026-04-29",
+    "car_make": "Toyota",
+    "car_model": "Camry",
+    "car_year": 2023
+}'
+
+# Output:
+{"status": "Review posted successfully"}
