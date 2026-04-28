@@ -11,3 +11,4 @@ urlpatterns = [
     path('get_dealer/<int:dealer_id>', views.get_dealer_details, name='get_dealer_details'),
     path('reviews/dealer/<int:dealer_id>', views.get_dealer_reviews, name='get_dealer_reviews'),
 ]
+path('analyze/<str:review_text>', views.get_sentiment, name='analyze_review'),
