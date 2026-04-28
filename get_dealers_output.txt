@@ -1,0 +1,5 @@
+[GET] /djangoapp/get_dealers 200 OK
+Fetched 3 dealerships from Cloudant database.
+1. Best Cars - New York
+2. LA Auto - Los Angeles
+3. Kansas Motors - Wichita
