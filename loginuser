@@ -1,0 +1,5 @@
+# Command:
+curl -X POST http://localhost:8000/djangoapp/login -d "username=shaleekhalil&password=shalee123"
+
+# Output:
+{"username": "shaleekhalil", "status": "Authenticated"}
